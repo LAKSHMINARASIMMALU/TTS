@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.auth-container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #49ba49;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+span {
+  cursor: pointer;
+  color: blue;
+}
+/* src/App.css */
+
+/* src/App.css */
+.main-container {
+  text-align: center;
+  padding: 20px;
+  position: relative;  /* Ensure the container has a relative position */
+}
+
+.logout-button {
+  position: absolute;  /* Position relative to the nearest positioned ancestor */
+  top: 20px;  /* 20px from the top of the container */
+  right: 20px;  /* 20px from the right side of the container */
+  padding: 8px 16px;  /* Smaller size for the button */
+  font-size: 14px;  /* Smaller font size */
+  background-color: #898382;  /* Red color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;  /* Darker red on hover */
+}
+

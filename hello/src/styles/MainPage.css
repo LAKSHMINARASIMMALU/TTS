@@ -1,0 +1,187 @@
+/* src/styles/MainPage.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #00ff7f;
+    text-shadow: 2px 2px 10px rgba(0, 255, 127, 0.7);
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #bbb;
+  }
+  
+  /* Sidebar Container for Common Words & Emojis */
+.sidebar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  margin-top: 20px;
+  gap: 20px;
+}a
+
+/* Common Words & Emoji Sections Side by Side */
+.common-words, .suggestions, .emoji-section {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+.suggestions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 150px;
+  max-width: 250px;
+}
+
+/* Ensures buttons take equal space */
+.common-words button, .emoji-section button {
+  text-shadow: 2px 2px 10px rgba(17, 17, 17, 0.7);
+  margin: 10px;
+  flex: 1 1 calc(50% - 10px); /* Makes them appear side by side */
+  max-width: 100px; /* Adjust as needed */
+}
+
+  button {
+    background: #00ff7f;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background: #15cf15;
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+  }
+  
+  .text-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #00ff7f;
+    background: #222;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .language-selector {
+    margin-top: 20px;
+    align-items: center;
+  }
+  
+  select {
+    background: #00ff7f;
+    color:white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  select:hover {
+    background: #009e50;
+    color: black;
+  }
+  
+  .logout-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #3d913d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    
+  }
+  
+  .logout-btn:hover {
+    background-color: #03cc00;
+  }
+
+  div{
+    margin-bottom: 20px;
+  }
+
+
+
+  /* ✅ Mobile View Fixes */
+@media (max-width: 768px) {
+    .main-container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+    .text-input-container{
+      margin-left: 10%;
+      max-width: 300px;
+      align-content: center;
+    }
+  
+    .content-wrapper, .common-words, .emoji-section {
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  
+    textarea {
+      font-size: 0.9rem;
+      min-height: 80px;
+    }
+  
+    .logout-btn {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  
